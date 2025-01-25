@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+body {
+    background-color: #0E0E0E;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 840px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.white__P {
+    color: #fff;
+}
+
+.gray__P {
+    color: #7B7B7B;
+}
+
+.profile {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 400px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        display: none;
+    }
+
+    .gone__P {
+        display: none;
+    }
+
+    .First__Line {
+        max-width: 300px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .filters {
+        flex-direction: column;
+    }   
+    
+    .moviePic {
+        max-width: 392px;
+        width: 100%;
+        height: 219px;
+    }
+
+    .movieOne {
+        background: none;
+        max-width: 392px;
+        width: 100%;   
+    }
+
+    .First__Line {
+        max-width: 400px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .batmanImg {
+        display: none;
+    }
+}
+
+.batman {
+    max-width: 840px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0px 0px 40px;
+    background-image: url(../images/backgroundimg.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 16px;
+}
+
+.batmanImg {
+    max-height: 430px;
+    height: 100%;
+    border-bottom-right-radius: 16px;
+    align-self: flex-end;
+}
+
+.batman__Text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.batman__Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.description {
+    max-width: 355px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.watchNow {
+    border-radius: 8px 32px;
+    padding: 12px 24px;
+    background-color: #AA0000;
+    box-shadow: 5px 2px 11.9px 0px #A00;
+    border: none;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.recommended {
+    max-width: 530px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.searchInput {
+    border-radius: 0px 24px 24px 0px;
+    background: #191919;
+    padding: 8px 16px 8px 10px;
+    border: none;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.loop {
+    background-color: #191919;
+    padding: 4px 0px 4px 8px;
+    border-radius: 24px 0px 0px 24px;
+}
+
+.searchInput:focus {
+    border: 1px solid #A00;
+}
+
+
+.filters {
+    display: flex;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.selects {
+    display: flex;
+    gap: 16px;
+}
+
+.years {
+    border-radius: 24px;
+    background: #191919;
+    padding: 8px 12px;
+    border: none;
+    color: #7B7B7B;
+    text-align: left;
+}
+
+option {
+    background: #191919;
+    color: #7B7B7B;
+}
+
+option:focus {
+    border: none;
+}
+
+option:hover {
+    border-radius: 24px;
+    background: #818181;
+}
+
+optgroup {
+    border-radius: 24px;
+}
+
+.years:focus {
+    border: none;
+}
+
+.years:after {
+    border: none;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 840px;
+    width: 90%;
+    margin: 32px auto;
+}
+
+.movieOne {
+    background-image: url(../images/backgroundKiller.png);  
+    background-repeat: no-repeat;
+    min-width: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 219px;
+}
+
+.First__Line {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .gone__Button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .goneBeforeTablet {
+        display: none;
+    }
+}
